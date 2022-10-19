@@ -30,7 +30,7 @@ body{
 
 #logo{
     float: left;
-    display: inline;
+    display: inline-block;
 }
 
 /*nav {
@@ -76,7 +76,6 @@ nav ul li a{
     max-width: 60%;
     flex-grow: 1;
     display: flex;
-    
     flex-direction: column;
 } 
 
@@ -84,8 +83,7 @@ nav ul li a{
     background-color: antiquewhite;
     right: 2px;
     width: 20%;
-    position: fixed;
-    
+    position: fixed;    
 }
 
 
@@ -93,7 +91,9 @@ nav ul li a{
     width: 40%;
     font-size: 18px;
     float: left;
+    display:inline-block;
     margin-left: 50px;
+    margin-top:0;
 }
 
 figure{
@@ -113,7 +113,7 @@ figure{
 }
 
 #item-img3{
-    width: 400px;
+    width: 25rem;
 }
 
 footer{
@@ -134,3 +134,19 @@ footer{
     font-size: 20px;
 }
 
+#main-footer{
+    float:left;
+    margin: 15px;
+}
+
+#cookie-aside{
+    z-index: 9999;
+    background-color: rgba(255, 170, 1, 0.5);
+    position:fixed;
+    float: right;
+}
+
+#cookie-aside p{
+    color: #FFF;
+    z-index: 9999;
+}
