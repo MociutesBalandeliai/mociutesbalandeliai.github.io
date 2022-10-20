@@ -4,7 +4,6 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
- 
 }
 
 
@@ -50,26 +49,41 @@ nav ul{
     padding: 0;
     margin: 0.2rem;
     text-align: center;
-    word-spacing: 40px;
     text-transform: uppercase;
-    border-bottom: 5px solid black;
-    border-top: 5px solid black;
+    background-color: #FFC72B;
+    overflow: hidden;
 }
 
 nav ul li{
     display: inline-block;
-
+    border-right: 1px solid #fff; 
+    padding: 16px 16px;
+ 
 }
 
 nav ul li a{
-    color: black; /*change to hex */
+    color: #FFF;
     text-decoration: none;
-    font-size: 20px;
+    text-align: center;
+    font-size: 15px;
     font-weight: bold;
+}
+
+nav ul li:first-child {
+    border-left: 1px solid #fff;
+}
+
+nav ul li:hover{
+    background-color: #d4a112;
 }
 
 #suggested-products{
     text-align: center;
+    background-color: #FFC72B;
+    color: #FFF;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top:5px;
 }
 
 #main-section{
@@ -81,11 +95,16 @@ nav ul li a{
 }
 
 #section-article{
-    background-color: lightblue;
     max-width: 60%;
     display: flex;
     flex-direction: column;
     flex-grow:1;
+    border: double;
+    border-width: 10px;
+    margin-right: 15px;
+    border-radius: 5px;
+    height: 1240px;
+
 } 
 
 #section-aside{
@@ -94,8 +113,24 @@ nav ul li a{
     width: 20%;
     flex-shrink: 0;
     position: fixed; 
-    height: 200px;
 }
+
+#section-aside  li {
+    font-weight: bold;
+    color: #FFF;
+}
+
+footer a{
+    text-transform: uppercase;
+    background-color: #FFC72B;
+    color: white;
+}
+
+footer a:hover{
+    background-color: #d4a112;
+}
+
+
 
 
 
@@ -149,12 +184,14 @@ footer{
 #main-footer{
     float:left;
     margin: 15px;
+
 }
 
 #cookie-aside{
     z-index: 9999;
     background-color: rgba(255, 170, 1, 0.5);
-    position:fixed;
+    float:right;
+    position: relative;
 }
 
 #cookie-aside p{
@@ -165,11 +202,13 @@ footer{
     display: block;
     margin: auto;
     width: 500px;
-    margin-top: 5px
+    margin-top: 5px;
 }
 
-
-
+#aside-h1{
+    text-transform: uppercase;
+    color: #FFF;
+}
 
 
 
