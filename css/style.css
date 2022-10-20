@@ -4,7 +4,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #FAF6F6;
+ 
 }
 
 
@@ -178,9 +178,43 @@ footer{
 
 #grid-container{
     display:grid;
-    grid-template-columns: 35% 50% 25% ;
+    grid-template-columns: auto auto auto;
     grid-gap: 10px;
 }
 #grid-container > article{
-    background-color: lightcyan;
+    background-color: rgb(209, 177, 245);
 }
+#grid-container > #article1{
+    order:2;
+    grid-area: 1 / 2 / span 2 / span 1;
+}
+
+#grid-container > #article2{
+    order:1;
+}
+
+#grid-container > #article3{
+    order:3;
+}
+
+#grid-container > #article4{
+    order:5;
+}
+
+#grid-container > #article5{
+    order:4;
+    grid-area: 2 / 1 / span 2 / span 1;
+}
+
+#grid-container > #article6{
+    order:6;
+    grid-column: span 2;
+}
+
+
+.article-p{
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+}
+
