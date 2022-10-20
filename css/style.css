@@ -4,6 +4,7 @@
 
 body{
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #FAF6F6;
 }
 
 
@@ -14,6 +15,8 @@ body{
 }
 
 #website-name{
+    font-family: Notable;
+    word-spacing: 3px;
     font-size: 80px;
     text-align: center;
     margin: 0;
@@ -22,8 +25,10 @@ body{
 }
 
 #payOff{
+    font-family: Notable;
     text-align: center;
     margin: 0;
+    margin-left: 5%;
     padding: 0;
   
 }
@@ -44,19 +49,23 @@ nav ul{
     list-style-type: none;
     padding: 0;
     margin: 0.2rem;
-    border-style: solid;
     text-align: center;
+    word-spacing: 40px;
+    text-transform: uppercase;
+    border-bottom: 5px solid black;
+    border-top: 5px solid black;
 }
 
 nav ul li{
     display: inline-block;
+
 }
 
 nav ul li a{
     color: black; /*change to hex */
     text-decoration: none;
     font-size: 20px;
-    padding: 40px;
+    font-weight: bold;
 }
 
 #suggested-products{
@@ -74,17 +83,20 @@ nav ul li a{
 #section-article{
     background-color: lightblue;
     max-width: 60%;
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
+    flex-grow:1;
 } 
 
 #section-aside{
-    background-color: antiquewhite;
+    background-color: #FFC72B;
     right: 2px;
     width: 20%;
-    position: fixed;    
+    flex-shrink: 0;
+    position: fixed; 
+    height: 200px;
 }
+
 
 
 .item-p{
@@ -143,10 +155,32 @@ footer{
     z-index: 9999;
     background-color: rgba(255, 170, 1, 0.5);
     position:fixed;
-    float: right;
 }
 
 #cookie-aside p{
     color: #FFF;
-    z-index: 9999;
+}
+
+#video{
+    display: block;
+    margin: auto;
+    width: 500px;
+    margin-top: 5px
+}
+
+
+
+
+
+
+/* PRODUCT PAGE */
+
+
+#grid-container{
+    display:grid;
+    grid-template-columns: 35% 50% 25% ;
+    grid-gap: 10px;
+}
+#grid-container > article{
+    background-color: lightcyan;
 }
