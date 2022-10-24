@@ -409,3 +409,29 @@ input[type=submit]:hover{
     display:grid;
     grid-template-rows: auto auto auto;
 }
+
+/*HOME*/
+
+#home-article-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#home-img2, #home-img1, #home-img3{
+    width: 300px;
+}
+
+figure{
+    float: right;
+}
+
+.home-p{
+    width: 70%;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+#home-main-section{
+    display:flex;
+    flex-direction: row;
+}
