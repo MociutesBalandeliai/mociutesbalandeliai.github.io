@@ -175,7 +175,7 @@ figure{
 footer{
     align-items: center;
     text-align: center;
-    margin-top: 20px;
+    margin: 0;
 }
 
 
@@ -192,7 +192,8 @@ footer{
 
 #main-footer{
     float:left;
-    margin: 15px;
+    margin:0;
+    margin-left: 5px;
 
 }
 
@@ -204,6 +205,9 @@ footer{
     padding: 0 15px 0 15px;
     margin-right: 10px;
     margin-top: 5px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
 }
 
 #cookie-aside p{
@@ -330,3 +334,78 @@ tr:nth-child(odd){
     width: 100%;
 }
 
+#table-c{
+    margin-left: 5px;
+}
+
+
+/*CONTACT*/
+
+fieldset{
+    background-color: #f2f2f2;
+}
+form ul li{
+    list-style-type: none;
+    align-items: center;
+
+}
+
+form ul{
+    padding-left: 0;
+}
+
+form{
+    align-items: center;
+    border-radius: 5px;
+}
+
+input[type=text], textarea{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+input[type=email]{
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: none;
+}
+
+input[type=submit]{
+    border-radius: 5px;
+    border:none;
+    background-color: #FFC72B;
+    padding: 12px 20px;
+}
+
+input[type=submit]:hover{
+    background-color: #d4ad41;
+}
+
+#contact-selection{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 10px;
+    margin-left: 3px;
+}
+
+#contact-aside > img {
+    width: 100%;
+}
+
+#contact-aside{
+    display:grid;
+    grid-template-rows: auto auto auto;
+}
