@@ -78,6 +78,10 @@ nav ul li:hover{
     background-color: #d4a112;
 }
 
+nav ul li:active{
+    background-color: #b68c18;
+}
+
 #suggested-products{
     text-align: center;
     background-color: #FFC72B;
@@ -129,6 +133,10 @@ footer a{
 
 footer a:hover{
     background-color: #d4a112;
+}
+
+footer a:active{
+    background-color: #ae8410;
 }
 
 
@@ -280,3 +288,45 @@ footer{
    height: 100%;
 
 }
+
+
+
+/* PRICING */
+
+td {
+    text-align: center;
+}
+
+table, td, th{
+    border: solid;
+
+}
+
+th:first-child{
+    background-color: #FF0 ;
+}
+
+tr:nth-child(even){
+    background-color: #CFF;
+}
+
+tr:nth-child(odd){
+    background-color: #FFF;
+}
+
+#pricing-selection{
+    display: grid;
+    grid-template-columns: 80% 20%;
+    grid-column-gap: 10px;
+    margin-left: 3px;
+}
+
+#pricing-aside{
+    background-color: lightblue;
+    margin-right: 13px;
+}
+
+#pricing-aside > img{
+    width: 100%;
+}
+
