@@ -48,7 +48,6 @@ body{
 nav ul{
     list-style-type: none;
     padding: 0;
-    margin: 0.2rem;
     text-align: center;
     text-transform: uppercase;
     background-color: #FFC72B;
@@ -82,14 +81,17 @@ nav ul li:active{
     background-color: #b68c18;
 }
 
+
+
 #suggested-products{
-    text-align: center;
     background-color: #FFC72B;
-    color: #FFF;
+    color: rgb(255, 255, 255);
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top:5px;
+    text-align: center;
 }
+
 
 #main-section{
     display:flex;
@@ -194,6 +196,7 @@ footer{
     float:left;
     margin:0;
     margin-left: 5px;
+    padding: 10px;
 
 }
 
@@ -415,10 +418,22 @@ input[type=submit]:hover{
 #home-article-section{
     display: flex;
     flex-direction: column;
+    margin-right: 2em;
+    width: 70%;
+}
+
+#home-article-section header h1 {
+    display: inline-block;
+    font-size: 25px;
+    margin: 20px;
+}
+
+#home-article-section header {
+    text-align: center;
 }
 
 #home-img2, #home-img1, #home-img3{
-    width: 300px;
+    width: 400px;
 }
 
 figure{
@@ -426,12 +441,41 @@ figure{
 }
 
 .home-p{
-    width: 70%;
+    width: 50%;
     display: inline-block;
-    margin-left: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+
 }
 
-#home-main-section{
-    display:flex;
-    flex-direction: row;
+
+
+
+#home-aside h1 {
+    text-align: center;
+}
+
+#home-aside {
+    position: fixed;
+    right: 0px;
+    top: 14rem;
+    z-index: 9998;
+    margin-right: 10px;
+    background-color: #cbcbcb;
+    border-radius: 2px;
+    padding: 10px;
+
+}
+
+#home-aside h1{
+    font-size: 16px;
+}
+
+#home-aside ol {
+    text-align: center;
+    font-size: 15px;
+}
+
+#home-article-section footer {
+    margin-top: 0.5rem;
 }
