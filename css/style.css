@@ -479,3 +479,65 @@ figure{
 #home-article-section footer {
     margin-top: 0.5rem;
 }
+
+
+@media only screen and (max-width: 1279px) and (min-width: 481px){
+
+    #home-aside {
+        margin: 0;
+        position: static;
+        width: 100%;
+
+    }
+
+    #suggested-products{
+        display: none;
+    }
+
+    nav ul {
+        margin-bottom: 1px;
+    }
+
+    figure{
+        float: left;
+        margin-left: 10px;
+    }
+
+    .home-p{
+        float: right;
+        font-size: 1.2em;
+        width: 100%;
+        margin-left: 5px;
+    }
+
+    #home-article-section footer  {
+        margin-top: 0.2rem;
+        clear: both;
+    }
+
+    #home-article-section footer a {
+        float: right;
+        margin: 5px;
+    }
+
+
+
+    #home-article-section{
+        width: 100%;
+    }
+
+    #home-article-section article {
+        margin-bottom: 20px;
+    }
+
+    #home-article-section footer {
+        margin-top: 2rem;
+        margin-left: 10px;
+    }
+
+    #home-img2, #home-img1, #home-img3{
+        width: 400px;
+    }
+    
+
+}
