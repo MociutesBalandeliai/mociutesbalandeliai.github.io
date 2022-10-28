@@ -38,6 +38,7 @@ body{
     display: inline-block;
 }
 
+
 /*nav {
     display: flex;
     align-items: center;
@@ -117,7 +118,7 @@ body{
 #section-aside{
     background-color: #FFC72B;
     right: 2px;
-    width: 20%;
+    width: 30%;
     flex-shrink: 0;
     position: fixed; 
 }
@@ -127,11 +128,14 @@ body{
     color: #FFF;
 }
 
+
+
 footer a{
     text-transform: uppercase;
     background-color: #FFC72B;
     color: white;
 }
+
 
 footer a:hover{
     background-color: #d4a112;
@@ -154,12 +158,7 @@ footer a:active{
     margin-top:0;
 }
 
-figure{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-}
+
 
 
 #item-img1{
@@ -434,6 +433,7 @@ input[type=submit]:hover{
 
 #home-img2, #home-img1, #home-img3{
     width: 400px;
+
 }
 
 figure{
@@ -445,6 +445,7 @@ figure{
     display: inline-block;
     margin-left: 30px;
     font-size: 20px;
+    float:left;
 
 }
 
@@ -487,6 +488,9 @@ figure{
         margin: 0;
         position: static;
         width: 100%;
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
 
     }
 
@@ -498,16 +502,15 @@ figure{
         margin-bottom: 1px;
     }
 
-    figure{
-        float: left;
-        margin-left: 10px;
-    }
+ 
 
     .home-p{
-        float: right;
         font-size: 1.2em;
         width: 100%;
-        margin-left: 5px;
+        margin: 0;
+        float: right;
+        background-color: rgb(241, 170, 170);
+
     }
 
     #home-article-section footer  {
@@ -538,6 +541,9 @@ figure{
 
     #home-img2, #home-img1, #home-img3{
         width: 400px;
+        float: left;
+        margin-right: 5px;
+
     }
     
 
@@ -582,21 +588,26 @@ figure{
     }
 
     figure{
-        float: left;
         margin-left: 10px;
         margin-bottom: 20px;
     }
 
-    
+
+
+    #home-article-section{
+        width: 90%;
+    }
+
+
+
     .home-p{
        width: 100%;
        text-align: center;
        font-size: 18px;
-       float: right;
     }
 
     #home-img2, #home-img1, #home-img3{
-        width: 250px;
+        width: 300px;
     }
 
     #home-article-section footer a{
