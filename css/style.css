@@ -429,7 +429,6 @@ input[type=submit]:hover{
 
 .home-p{
     width: 50%;
-    display: inline-block;
     margin-left: 25px;
     font-size: 20px;
     float:left;
@@ -497,7 +496,7 @@ input[type=submit]:hover{
 
     .home-p{
         font-size: 1.2em;
-        width: 100%;
+        width: 50%;
         margin: 0;
         float: right;
         background-color: rgb(241, 170, 170);
@@ -505,16 +504,11 @@ input[type=submit]:hover{
     }
 
     #home-article-section footer  {
-        margin-top: 0.2rem;
         clear: both;
-
+   
     }
 
-    #home-article-section footer a {
-        float: right;
-        margin: 5px;
-    }
-
+ 
 
 
     #home-article-section{
@@ -531,10 +525,9 @@ input[type=submit]:hover{
     }
 
     #home-img2, #home-img1, #home-img3{
-        width: 400px;
+        width: 45%;
         float: left;
-        margin-right: 5px;
-
+      
     }
     
 
@@ -653,7 +646,4 @@ input[type=submit]:hover{
 
 }
 
-#footer-span
-    {
-        margin: auto;
-    }
+
