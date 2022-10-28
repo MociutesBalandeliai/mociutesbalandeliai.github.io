@@ -45,7 +45,7 @@ body{
     padding: 8px;
 } */
 
-nav ul{
+#main-nav ul{
     list-style-type: none;
     padding: 0;
     text-align: center;
@@ -54,14 +54,14 @@ nav ul{
     overflow: hidden;
 }
 
-nav ul li{
+#main-nav ul li{
     display: inline-block;
     border-right: 1px solid #fff; 
     padding: 16px 16px;
  
 }
 
-nav ul li a{
+#main-nav ul li a{
     color: #FFF;
     text-decoration: none;
     text-align: center;
@@ -69,15 +69,15 @@ nav ul li a{
     font-weight: bold;
 }
 
-nav ul li:first-child {
+#main-nav ul li:first-child {
     border-left: 1px solid #fff;
 }
 
-nav ul li:hover{
+#main-nav ul li:hover{
     background-color: #d4a112;
 }
 
-nav ul li:active{
+#main-nav ul li:active{
     background-color: #b68c18;
 }
 
@@ -513,6 +513,7 @@ figure{
     #home-article-section footer  {
         margin-top: 0.2rem;
         clear: both;
+
     }
 
     #home-article-section footer a {
@@ -539,5 +540,113 @@ figure{
         width: 400px;
     }
     
+
+}
+
+
+
+
+
+
+/* HAMBURGER */
+
+#hamburger img{
+    width: 50px;
+}
+
+#hamburger ul li{
+    list-style-type: none;
+}
+
+/*#hide{
+    display: none
+}*/
+
+#hamburger-img:hover + #hide{
+    display:block;
+}
+
+#hamburger{
+    display:none;
+}
+
+
+
+@media only screen and (max-width: 480px){
+    #home-aside{
+        display:none;
+    }
+
+    #video{
+        display:none;
+    }
+
+    figure{
+        float: left;
+        margin-left: 10px;
+        margin-bottom: 20px;
+    }
+
+    
+    .home-p{
+       width: 100%;
+       text-align: center;
+       font-size: 18px;
+       float: right;
+    }
+
+    #home-img2, #home-img1, #home-img3{
+        width: 250px;
+    }
+
+    #home-article-section footer a{
+      margin: 0;
+    }
+
+    #main-footer{
+        margin-top: 5px;
+    }
+
+    #hamburger{
+        display:initial;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+
+    #hide{
+        width: 400px;
+        box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+        margin: 0;
+        text-align: center;
+  
+    }
+
+    #hide li a{
+        font-size: 20px;
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+    }
+
+
+
+    #hide li{
+        display: inline-block;
+    }
+
+    #main-nav{
+        display:none;
+    }
+
+    #hamburger-img{
+        margin-top: 10px;
+    }
+
+    #suggested-products{
+        margin-bottom: 0;
+    }
 
 }
