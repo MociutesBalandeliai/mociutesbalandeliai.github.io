@@ -24,6 +24,14 @@ body{
    
 }
 
+#mobile-payOff{
+    display:none;
+    font-family: Notable;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
 #payOff{
     font-family: Notable;
     text-align: center;
@@ -495,11 +503,11 @@ input[type=submit]:hover{
  
 
     .home-p{
-        font-size: 1.2em;
+        font-size: 1.1em;
         width: 50%;
         margin: 0;
+        margin-bottom: 15px;
         float: right;
-        background-color: rgb(241, 170, 170);
 
     }
 
@@ -527,6 +535,7 @@ input[type=submit]:hover{
     #home-img2, #home-img1, #home-img3{
         width: 45%;
         float: left;
+        margin-left: 5px;
       
     }
     
@@ -563,6 +572,28 @@ input[type=submit]:hover{
 
 
 @media only screen and (max-width: 480px){
+
+    #logo{
+        display:none;
+    }
+
+    #website-name{
+        font-size: 15px;
+        float: left;
+        margin: 0;
+    }
+
+    #payOff{
+        display:none;
+    }
+
+    #mobile-payOff{
+        display: initial;
+        font-size: 15px;
+        float: left;
+        clear: both;
+    }
+
     #home-aside{
         display:none;
     }
@@ -607,6 +638,8 @@ input[type=submit]:hover{
         align-items:center;
         display: flex;
         flex-direction: column;
+        width: 20%;
+        justify-content: space-around;
         
 
     }
@@ -629,16 +662,14 @@ input[type=submit]:hover{
 
 
     #hide li{
-        display: inline-block;
+        display:none;
     }
 
     #main-nav{
         display:none;
     }
 
-    #hamburger-img{
-        margin-top: 10px;
-    }
+  
 
     #suggested-products{
         margin-bottom: 0;
