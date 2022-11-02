@@ -234,7 +234,7 @@ footer{
 
 #grid-container{
     display:grid;
-    grid-template-columns: 40% 35% 23.5%;
+    grid-template-columns: 40% 35% 22%;
     grid-gap: 10px;
 }
 #grid-container > article{
@@ -550,37 +550,53 @@ input[type=submit]:hover{
 /* HAMBURGER */
 
 #hamburger img{
-    width: 50px;
+    width: 40px;
 }
 
 #hamburger ul li{
     list-style-type: none;
 }
 
-/*#hide{
-    display: none
-}*/
+#hide{
+    display: none;
+    z-index: 9997;
+    padding-left: 0;
+
+}
 
 #hamburger-img:hover + #hide{
-    display:block;
+    display:initial;
 }
+
+#hide:hover{
+    display:initial;
+}
+
 
 #hamburger{
     display:none;
+
 }
 
 
 
 @media only screen and (max-width: 480px){
 
+
+    header{
+      height: 50px;
+    }
+    
     #logo{
         display:none;
     }
 
     #website-name{
-        font-size: 15px;
+        font-size: 25px;
         float: left;
         margin: 0;
+        margin-left: 5px;
+
     }
 
     #payOff{
@@ -592,37 +608,44 @@ input[type=submit]:hover{
         font-size: 15px;
         float: left;
         clear: both;
+        margin-left: 5px;
+
     }
 
-    #home-aside{
-        display:none;
+    
+    #home-aside {
+        margin: 0;
+        margin-top: 5px;
+        position: static;
+        width: 100%;
+        padding: 0;
+        padding-top: 5px;
+        padding-bottom: 5px;
+
     }
+
 
     #video{
         display:none;
     }
 
-    figure{
-        margin-left: 10px;
-        margin-bottom: 20px;
-    }
-
-
-
     #home-article-section{
-        width: 90%;
+        width: 100%;
     }
 
 
 
     .home-p{
-       width: 100%;
        text-align: center;
-       font-size: 18px;
+       font-size: 15px;
+       margin: 0;
+       width: 100%;
+
     }
 
     #home-img2, #home-img1, #home-img3{
-        width: 300px;
+        width: 200px;
+        margin-left: 5px;
     }
 
     #home-article-section footer a{
@@ -638,17 +661,19 @@ input[type=submit]:hover{
         align-items:center;
         display: flex;
         flex-direction: column;
-        width: 20%;
         justify-content: space-around;
-        
+        width: 20%;
 
     }
 
+
+
     #hide{
-        width: 400px;
-        box-shadow: 0px 8px 15px 0px rgba(0,0,0,0.2);
+        width: 100px;
+        background-color: #e1d2aa;
         margin: 0;
         text-align: center;
+        align-items: center;
   
     }
 
@@ -660,21 +685,71 @@ input[type=submit]:hover{
     }
 
 
-
-    #hide li{
-        display:none;
-    }
-
     #main-nav{
         display:none;
     }
-
-  
 
     #suggested-products{
         margin-bottom: 0;
     }
 
+    #home-article-section span{
+        display: flex;
+        margin-top: 5px;
+        flex-direction: row-reverse;
+        align-items: center;
+        margin-top: 10px;
+    }
+    
+    #home-article-section header h1{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    #home-article-section header{
+        align-items: center;
+    }
+
+    #home-article-section footer{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #home-article-section footer a{
+        margin: 5px;
+    }
+
+
 }
+
+
+
+
+/*PRODUCT PAGE QUERY */
+
+
+
+@media only screen and (max-width: 1279px) and (min-width: 481px){
+    #grid-container > #article1{
+        order:1;
+        grid-area: 1 / 1 / span 1 / span 2;
+    }
+
+    #grid-container > #article2{
+        order:2;
+        
+
+    }
+
+    #grid-container > #article3{
+        order:3;
+    }
+   
+    #grid-container > #article4{
+        display:none;
+    }
+}
+
 
 
