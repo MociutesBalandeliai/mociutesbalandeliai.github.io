@@ -886,8 +886,11 @@ input[type=submit]:hover{
         grid-template-rows: auto auto auto;
     }
 
-    
+    /*CONTACT*/
 
+    #contact-selection{
+        grid-template-columns: 100%;
+    }
 }
 
 
