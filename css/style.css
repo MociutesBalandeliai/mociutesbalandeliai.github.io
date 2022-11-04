@@ -298,6 +298,19 @@ footer{
 
 /* PRICING */
 
+#article-pricing{
+    text-align: center;
+    align-items: center;
+
+}
+
+#article-pricing p{
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+
+
 td {
     text-align: center;
 }
@@ -335,8 +348,15 @@ tr:nth-child(odd){
     width: 100%;
 }
 
-#table-c{
-    margin-left: 5px;
+#copyright-table{
+    border: solid;
+    border-style: none;
+    margin-top: 0.2em;
+    margin-left: 2px;
+}
+
+#copyright-table th{
+    background-color: #cbcbcb;
 }
 
 
@@ -352,12 +372,17 @@ form ul li{
 }
 
 form ul{
-    padding-left: 0;
+    padding-left: 0em;
 }
 
 form{
     align-items: center;
-    border-radius: 5px;
+    border-radius: 6px;
+}
+
+#article-contact{
+    text-align: center;
+    align-items: center;
 }
 
 input[type=text], textarea{
@@ -482,6 +507,7 @@ input[type=submit]:hover{
 
 @media only screen and (max-width: 1279px) and (min-width: 481px){
 
+    /*HOME*/
     #home-aside {
         margin: 0;
         position: static;
@@ -539,6 +565,71 @@ input[type=submit]:hover{
       
     }
     
+    /* PRODUCT */
+
+    #grid-container{
+        grid-template-columns: 50% 48.5%;
+    }
+    
+    
+    #grid-container > #article1{
+        order:1;
+        grid-area: 1 / 1 / span 1 / span 1; 
+        /* row start / column start / span of rows/ span of columns */
+        font-size: 15px;
+    }
+
+    #grid-container > #article2{
+        order:2;
+        grid-area: 1 / 2 / span 1 / span 1; 
+        font-size: 15px;
+    }
+
+    #grid-container > #article3{
+        order:3;
+        grid-area: 2 / 1 / span 1 / span 1;
+        font-size: 15px;
+
+
+    
+    }
+   
+    #grid-container > #article4{
+        display:none;
+    }
+
+    #grid-container > #article5{
+       order: 4;
+       grid-area: 2 / 2 / span 1 / span 1;
+       font-size: 15px;
+    }
+
+
+    #img-3-grid{
+        display: none;
+    }
+
+    /*PRICING*/
+
+    #pricing-selection{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+
+    }
+
+    #pricing-aside{
+        order: 3;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    #pricing-aside #img1{
+        display:none;
+    }
+ 
+
+
 
 }
 
@@ -597,6 +688,7 @@ input[type=submit]:hover{
         margin: 0;
         margin-left: 5px;
 
+
     }
 
     #payOff{
@@ -607,7 +699,6 @@ input[type=submit]:hover{
         display: initial;
         font-size: 15px;
         float: left;
-        clear: both;
         margin-left: 5px;
 
     }
@@ -720,64 +811,8 @@ input[type=submit]:hover{
         margin: 5px;
     }
 
+    /* PRODUCT */
 
-}
-
-
-
-
-/*PRODUCT PAGE QUERY */
-
-
-
-@media only screen and (max-width: 1279px) and (min-width: 481px){
-    
-    #grid-container{
-        grid-template-columns: 50% 48.5%;
-    }
-    
-    
-    #grid-container > #article1{
-        order:1;
-        grid-area: 1 / 1 / span 1 / span 1; 
-        /* row start / column start / span of rows/ span of columns */
-        font-size: 15px;
-    }
-
-    #grid-container > #article2{
-        order:2;
-        grid-area: 1 / 2 / span 1 / span 1; 
-        font-size: 15px;
-    }
-
-    #grid-container > #article3{
-        order:3;
-        grid-area: 2 / 1 / span 1 / span 1;
-        font-size: 15px;
-
-
-    
-    }
-   
-    #grid-container > #article4{
-        display:none;
-    }
-
-    #grid-container > #article5{
-       order: 4;
-       grid-area: 2 / 2 / span 1 / span 1;
-       font-size: 15px;
-    }
-
-
-    #img-3-grid{
-        display: none;
-    }
-}
-
-
-
-@media only screen and (max-width: 480px){
     #grid-container{
         grid-template-columns: auto;
     }
@@ -786,6 +821,19 @@ input[type=submit]:hover{
         grid-area: 4
 
     }
+
+
+    #hamburger{
+        display:initial;
+        align-items:center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 20%;
+
+    }
+
+
 
       /* row start / column start / span of rows/ span of columns */
 
@@ -821,6 +869,31 @@ input[type=submit]:hover{
     }
 
 
+    /*PRICING*/
+
+    #article-pricing{
+        display:none;
+    }
+
+
+    #pricing-selection{
+        grid-template-columns: 100%;
+    }
+
+    #pricing-aside{
+        order: 3;
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+
     
-    
+
 }
+
+
+
+
+
+
+
+
