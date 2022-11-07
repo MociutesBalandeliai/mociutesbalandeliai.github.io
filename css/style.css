@@ -65,7 +65,7 @@ body{
 
 #main-nav ul li{
     display: inline-block;
-    border-right: 1px solid #fff; 
+    border-right: 1px solid #FFF; 
     padding: 16px 16px;
  
 }
@@ -83,7 +83,7 @@ body{
 }
 
 #main-nav ul li:hover{
-    background-color: #d4a112;
+    background-color:#D4A112;
 }
 
 #main-nav ul li:active{
@@ -91,10 +91,13 @@ body{
 }
 
 
+#article-video h2{
+    display:none;
+}
 
 #suggested-products{
     background-color: #FFC72B;
-    color: rgb(255, 255, 255);
+    color: #ffffff;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top:5px;
@@ -115,7 +118,7 @@ body{
 } 
 
 #section-aside{
-    background-color: #FFC72B;
+    background-color: #f0cc68;
     right: 2px;
     width: 30%;
     flex-shrink: 0;
@@ -131,7 +134,7 @@ body{
 
 footer a{
     text-transform: uppercase;
-    background-color: #FFC72B;
+    background-color: #ffe292;
     color: white;
 }
 
@@ -141,7 +144,7 @@ footer a:hover{
 }
 
 footer a:active{
-    background-color: #ae8410;
+    background-color: #e5be54;
 }
 
 
@@ -200,7 +203,8 @@ footer{
 
 #cookie-aside{
     z-index: 9999;
-    background-color: #ffaa0180;
+    background-color:#FA0;
+    opacity: 50%;
     float:right;
     position: relative;
     padding: 0 15px 0 15px;
@@ -231,6 +235,10 @@ footer{
 
 /* PRODUCT PAGE */
 
+.hello-none{
+    display:none;
+}
+
 
 #grid-container{
     display:grid;
@@ -238,7 +246,7 @@ footer{
     grid-gap: 10px;
 }
 #grid-container > article{
-    background-color: rgb(235, 224, 179);
+    background-color: #ebe0b3;
     text-align: center;
     border: solid;
     border-width: 5px;
@@ -329,7 +337,7 @@ tr:nth-child(even){
 }
 
 tr:nth-child(odd){
-    background-color: #FFF;
+    background-color: #efebeb;
 }
 
 #pricing-selection{
@@ -337,6 +345,10 @@ tr:nth-child(odd){
     grid-template-columns: 80% 20%;
     grid-column-gap: 10px;
     margin-left: 3px;
+}
+
+#pricing-selection h2{
+    display:none;
 }
 
 #pricing-aside{
@@ -350,7 +362,7 @@ tr:nth-child(odd){
 
 #copyright-table{
     border: solid;
-    border-style: none;
+    border-style: double;
     margin-top: 0.2em;
     margin-left: 2px;
 }
@@ -361,6 +373,11 @@ tr:nth-child(odd){
 
 
 /*CONTACT*/
+
+
+#name, #email, #message{
+    display: none;
+}
 
 fieldset{
     background-color: #f2f2f2;
@@ -427,6 +444,10 @@ input[type=submit]:hover{
     margin-left: 3px;
 }
 
+#contact-selection h2{
+    display:none;
+}
+
 #contact-aside > img {
     width: 100%;
 }
@@ -445,7 +466,11 @@ input[type=submit]:hover{
     width: 80%;
 }
 
-#home-article-section header h1 {
+#none{
+    display:none;
+}
+
+#home-article-section header h2 {
     display: inline-block;
     font-size: 25px;
     margin: 20px;
@@ -471,7 +496,7 @@ input[type=submit]:hover{
 
 
 
-#home-aside h1 {
+#home-aside h2 {
     text-align: center;
 }
 
@@ -487,7 +512,7 @@ input[type=submit]:hover{
 
 }
 
-#home-aside h1{
+#home-aside h2{
     font-size: 16px;
 }
 
@@ -569,12 +594,20 @@ input[type=submit]:hover{
 
     #grid-container{
         grid-template-columns: 50% 48.5%;
+        line-height: 20px;
+    }
+
+    .article-p::first-letter{
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: rgb(74, 64, 14);
     }
     
     
     #grid-container > #article1{
         order:1;
         grid-area: 1 / 1 / span 1 / span 1; 
+        text-indent: 1px;
         /* row start / column start / span of rows/ span of columns */
         font-size: 15px;
     }
@@ -589,9 +622,6 @@ input[type=submit]:hover{
         order:3;
         grid-area: 2 / 1 / span 1 / span 1;
         font-size: 15px;
-
-
-    
     }
    
     #grid-container > #article4{
@@ -602,6 +632,10 @@ input[type=submit]:hover{
        order: 4;
        grid-area: 2 / 2 / span 1 / span 1;
        font-size: 15px;
+    }
+
+    #article5 + p{
+        font-size:20px;
     }
 
 
@@ -675,12 +709,16 @@ input[type=submit]:hover{
 
 
     header{
-      height: 50px;
+      height: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     
     #logo{
         display:none;
     }
+
 
     #website-name{
         font-size: 25px;
@@ -698,9 +736,6 @@ input[type=submit]:hover{
     #mobile-payOff{
         display: initial;
         font-size: 15px;
-        float: left;
-        margin-left: 5px;
-
     }
 
     
@@ -719,6 +754,8 @@ input[type=submit]:hover{
     #video{
         display:none;
     }
+
+
 
     #home-article-section{
         width: 100%;
@@ -761,11 +798,13 @@ input[type=submit]:hover{
 
     #hide{
         width: 100px;
-        background-color: #e1d2aa;
+        background-color: #efede8;
+        border-radius: 5px;
+
         margin: 0;
         text-align: center;
         align-items: center;
-  
+
     }
 
     #hide li a{
@@ -792,7 +831,7 @@ input[type=submit]:hover{
         margin-top: 10px;
     }
     
-    #home-article-section header h1{
+    #home-article-section header h2{
         margin-top: 10px;
         font-size: 20px;
     }
