@@ -306,6 +306,10 @@ footer{
 
 /* PRICING */
 
+figure{
+    display:none;
+}
+
 #article-pricing{
     text-align: center;
     align-items: center;
